@@ -1,6 +1,6 @@
 :root {
   /* Couleurs primaires */
-  --primary-100: #154D71;
+  --primary-100: rgb(21, 77, 113);
   --primary-65: rgba(21, 77, 113, 0.65);
   --primary-30: rgba(21, 77, 113, 0.30);
 
@@ -19,7 +19,7 @@
 
 
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin : 0;
     padding: 0;
     box-sizing: border-box;
@@ -57,33 +57,16 @@ body {
 
 .header h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 700;
-    color: var(--primary-100);
+    color: var( --black);
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 .header h1:hover {
-    color: var(--secondary-100);
+    color: var( --gray-dark);
 }
-
-
-.nav-bar a {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--gray-dark);
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
-
-.nav-bar a:hover {
-    background-color: var(--primary-30);
-    color: var(--primary-100);
-}
-
 
 a{
     text-decoration: none;
@@ -91,19 +74,19 @@ a{
     font-size: 18px;
 }
 
-h1{
-    font-size: 24px;
+.nav-bar a {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     font-weight: 500;
+    color: var(--black);
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
-h2{
-    font-size: 24px;
-    font-weight: 700;
-}
-
-h3{
-    font-size: 20px;
-    font-weight: 700;
+.nav-bar a:hover {
+    background-color: var(--primary-65);
+    color: var(--white);
 }
 
 
@@ -111,16 +94,24 @@ h3{
 .hero {
     background: var(--primary-100);
     color: var(--white);
-    padding: 80px 24px;
+    padding: 40px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.hero-container {
-    max-width: 900px;
+.hero-container-white {
+    background-color: var(--white);
+    border-radius: 5px;
 }
+
+.hero-container-blue {
+    max-width: 900px;
+    background-color: var(--primary-65);
+    padding : 20px;
+}
+
 
 .hero-title {
     font-family: "Montserrat", sans-serif;
@@ -130,10 +121,10 @@ h3{
     line-height: 1.2;
 }
 
+
 .hero-description p {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
-    margin-bottom: 12px;
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -144,8 +135,8 @@ h3{
     padding: 12px 24px;
     font-size: 16px;
     font-weight: 600;
-    color: var(--white);
-    background-color: var(--secondary-100);
+    color: var(--black);
+    background-color: var(--background) !important;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -153,7 +144,7 @@ h3{
 
 .btn-primary:hover {
     background-color: var(--secondary-65);
-    color: var(--white);
+    color: var(--black);
     transform: translateY(-2px);
 }
 
@@ -165,12 +156,12 @@ h3{
 
 .section-header {
     margin-bottom: 32px;
-    text-align: center;
 }
 
 .section-title {
     font-family: "Montserrat", sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 700;
-    color: var(--primary-100);
+    color: var( --black);
+    text-align: start;
 }
