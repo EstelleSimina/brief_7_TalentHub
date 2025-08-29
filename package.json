@@ -6,19 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsx index.ts",
-    "dev": "tsx watch index.ts",
-    "build": "rollup -c"
+    "dev": "tsx watch index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^12.1.4",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "rollup": "^4.49.0",
     "tslib": "^2.8.1",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2",
